@@ -1,0 +1,12 @@
+{"shops": 
+    [{
+        "location": "test location #1",
+        "address" : "test address #1"
+    }, {
+        "location": "test location #2",
+        "address" : "test address #2"
+    }, {
+        "location": "",
+        "address" : ""
+    }]
+}
