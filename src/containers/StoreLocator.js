@@ -22,7 +22,16 @@ class StoreLocator extends Component {
 
         this.state = {
             currentMap: "none.png",
-            shops: []
+            shops: [{
+                "location": "Portland",
+                "address": "123 Portland Dr"
+            }, {
+                "location": "Astoria",
+                "address": "123 Astoria Dr"
+            }, {
+                "location": "",
+                "address": ""
+            }]
         };
 
         // this.setState(() => {
