@@ -25,9 +25,9 @@ class StoreLocator extends Component {
             shops: []
         };
 
-        this.setState(() => {
-            return {shops: this.shops}
-        });
+        // this.setState(() => {
+        //     return {shops: this.shops}
+        // });
 
         this.chooseMap = this.chooseMap.bind(this);
     }
@@ -46,32 +46,32 @@ class StoreLocator extends Component {
         );
     }
 
-    async componentDidMount() {
-        const response = await axios.get('http://localhost:3000/data/shops.json'); //.catch((error) => {
-            // if (error.response) {
-            //     // The request was made and the server responded with a status code
-            //     // that falls out of the range of 2xx
-            //     console.log(error.response.data);
-            //     console.log(error.response.status);
-            //     console.log(error.response.headers);
-            //   } else if (error.request) {
-            //     // The request was made but no response was received
-            //     // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-            //     // http.ClientRequest in node.js
-            //     console.log(error.request);
-            //   } else {
-            //     // Something happened in setting up the request that triggered an Error
-            //     console.log('Error', error.message);
-            //   }
-            //   console.log(error.config);
-        //});
+    // async componentDidMount() {
+    //     const response = await axios.get('http://localhost:3000/data/shops.json'); //.catch((error) => {
+    //         // if (error.response) {
+    //         //     // The request was made and the server responded with a status code
+    //         //     // that falls out of the range of 2xx
+    //         //     console.log(error.response.data);
+    //         //     console.log(error.response.status);
+    //         //     console.log(error.response.headers);
+    //         //   } else if (error.request) {
+    //         //     // The request was made but no response was received
+    //         //     // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+    //         //     // http.ClientRequest in node.js
+    //         //     console.log(error.request);
+    //         //   } else {
+    //         //     // Something happened in setting up the request that triggered an Error
+    //         //     console.log('Error', error.message);
+    //         //   }
+    //         //   console.log(error.config);
+    //     //});
 
-        if (response) {
-            this.setState(() => {
-                return {shops: response.data}
-            });
-        }
-    }
+    //     // if (response) {
+    //     //     this.setState(() => {
+    //     //         return {shops: response.data}
+    //     //     });
+    //     // }
+    // }
 
     chooseMap = (e) => {
         this.setState({
